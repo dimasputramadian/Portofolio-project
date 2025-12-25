@@ -10,6 +10,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 header {
@@ -20,6 +21,7 @@ header {
     display: flex;
     padding: 20px;
     position: fixed;
+    animation : slideInLeft 1s ease-in-out;
 }
 
 header :hover {
@@ -72,6 +74,7 @@ header .nav a:hover{
     border: 2px solid;
     border-radius: 40px;
     box-shadow: 0 2px 9px 0 white;
+    animation : slideInLeft 1s ease-in-out;
 }
 
 #profile .container .box-left {
@@ -86,6 +89,7 @@ header .nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation : slideInRight 1s ease-in-out;
 }
 
 #profile .container .box-right p {
@@ -149,6 +153,7 @@ header .nav a:hover{
     border-bottom: 2px solid;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    animation : slideInLeft 1s ease-in-out;
 }
 
 #portofolio .porto .container .box .text {
@@ -317,5 +322,29 @@ footer{
         align-items: center;
         text-align: center;
         gap: 20px;
+    }
+}
+
+@keyframes slideInLeft{
+    0%{
+        transform : translateX(-100px);
+        opacity : 0;
+    }
+
+    100%{
+        transform : translateX(0);
+        opacity : 1;
+    }
+}
+
+@keyframes slideInRight{
+    0%{
+        transform : translateX(100px);
+        opacity : 0;
+    }
+
+    100%{
+        transform : translateX(0);
+        opacity : 1;
     }
 }
