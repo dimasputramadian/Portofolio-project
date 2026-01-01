@@ -334,24 +334,23 @@ footer .footer-container{
 
 @keyframes slideInLeft{
     0%{
-        transform : translateX(-100px);
+        transform: translateX(-200px);
         opacity : 0;
     }
-
     100%{
-        transform : translateX(0);
+        transform: translateX(0px);
         opacity : 1;
     }
 }
 
 @keyframes slideInRight{
     0%{
-        transform : translateX(100px);
+        transform: translateX(200px);
         opacity : 0;
     }
-
     100%{
-        transform : translateX(0);
+        transform: translateX(0px);
         opacity : 1;
     }
 }
+
