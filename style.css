@@ -13,6 +13,8 @@
     overflow-x: hidden;
 }
 
+
+
 header {
     background-color: var(--bg-primary);
     color: var(--text-primary);
@@ -21,7 +23,7 @@ header {
     display: flex;
     padding: 20px;
     position: fixed;
-    animation : slideInLeft 1s ease-in-out;
+    animation: slideInLeft 1s ease-in-out;
 }
 
 header :hover {
@@ -34,7 +36,7 @@ header .title {
     margin-right: auto;
 }
 
-header .nav {    
+header .nav {
     display: flex;
     gap: 20px;
 
@@ -46,8 +48,8 @@ header .nav a {
     text-decoration: none;
 }
 
-header .nav a:hover{
-    color :white;
+header .nav a:hover {
+    color: white;
 }
 
 #profile {
@@ -74,7 +76,7 @@ header .nav a:hover{
     border: 2px solid;
     border-radius: 40px;
     box-shadow: 0 2px 9px 0 white;
-    animation : slideInLeft 1s ease-in-out;
+    animation: slideInLeft 1s ease-in-out;
 }
 
 #profile .container .box-left {
@@ -89,7 +91,7 @@ header .nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    animation : slideInRight 1s ease-in-out;
+    animation: slideInRight 1s ease-in-out;
 }
 
 #profile .container .box-right p {
@@ -104,9 +106,9 @@ header .nav a:hover{
     color: var(--text-primary)
 }
 
-#profile .container .box-right i:hover{
-        transition : all 0.3s ease-in-out;
-        color: aliceblue;
+#profile .container .box-right i:hover {
+    transition: all 0.3s ease-in-out;
+    color: aliceblue;
 
 }
 
@@ -119,7 +121,7 @@ header .nav a:hover{
 #portofolio :hover {
     color: white;
     cursor: pointer;
-    transition : all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out
 }
 
 #portofolio .title {
@@ -153,7 +155,7 @@ header .nav a:hover{
     border-bottom: 2px solid;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    animation : slideInLeft 1s ease-in-out;
+    animation: slideInLeft 1s ease-in-out;
 }
 
 #portofolio .porto .container .box .text {
@@ -171,9 +173,9 @@ header .nav a:hover{
     height: 100vh;
 }
 
-#testimoni :hover{
+#testimoni :hover {
     color: aliceblue;
-    transition : all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #testimoni .title {
@@ -213,45 +215,45 @@ header .nav a:hover{
     align-items: center;
     flex-direction: column;
     background-color: var(--bg-secondary);
-    color:var(--text-secondary)
+    color: var(--text-secondary)
 }
 
-footer{
+footer {
     background-color: #3a0f3aff;
     color: #eee;
-    padding : 10px;
+    padding: 10px;
 }
 
-footer .footer-container{
-    display : flex;
-    justify-content : space-around;
-    gap : 30px;
-    align-items :center;
+footer .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
-.footer-container h3{
-    margin-bottom : 10px;
+.footer-container h3 {
+    margin-bottom: 10px;
 }
 
-.footer-container a{
-    display : inline-block;
-    text-decoration : none;
-    color : white;
+.footer-container a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
 }
 
-.footer-container .footer-links{
-    display : flex;
-    flex-direction : column;
+.footer-container .footer-links {
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-container .footer-social{
-    display : flex;
-    flex-direction : column;
+.footer-container .footer-social {
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-container a:hover{
+.footer-container a:hover {
     color: var(--text-primary);
-    transition : all 0.3s ease-in-out ;
+    transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 480px) {
@@ -261,7 +263,7 @@ footer .footer-container{
         align-items: center;
         text-align: center;
     }
-    
+
 
     header .nav {
         gap: 12px;
@@ -296,6 +298,7 @@ footer .footer-container{
         max-width: 100%;
         text-align: center;
     }
+
     #portofolio {
         height: auto;
         padding-bottom: 50px;
@@ -321,36 +324,38 @@ footer .footer-container{
     #testimoni .testi .container {
         gap: 20px;
         padding-bottom: 20px;
-        display : flex;
+        display: flex;
         flex-direction: column;
     }
 
-    .footer-container{
-        display : flex;
-        flex-direction : column;
-        text-align : center;
+    footer .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
     }
 }
 
-@keyframes slideInLeft{
-    0%{
-        transform: translateX(-200px);
-        opacity : 0;
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-70px)
     }
-    100%{
-        transform: translateX(0px);
-        opacity : 1;
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px)
     }
 }
 
-@keyframes slideInRight{
-    0%{
-        transform: translateX(200px);
-        opacity : 0;
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(70px)
     }
-    100%{
-        transform: translateX(0px);
-        opacity : 1;
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px)
     }
 }
-
