@@ -224,11 +224,11 @@ footer {
     padding: 10px;
 }
 
-footer .footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+footer .footer-container{
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
+    gap : 20px;
 }
 
 .footer-container h3 {
@@ -328,34 +328,31 @@ footer .footer-container {
         flex-direction: column;
     }
 
-    footer .footer-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
+    footer .footer-container{
+        flex-direction : column;
+        text-align : center;
     }
 }
 
 
 @keyframes slideInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-70px)
+    0%{
+        opacity : 0.3;
+        transform : translateX(-70px)
     }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px)
+    100%{
+        opacity : 1;
+        transform : translateX(0px)
     }
 }
 
-@keyframes slideInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(70px)
+@keyframes slideInRight{
+    0%{
+        opacity : 0.3;
+        transform : translateX(70px)
     }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px)
+    100%{
+        opacity : 1;
+        transform : translateX(0px)
     }
 }
